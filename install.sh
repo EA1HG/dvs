@@ -1,6 +1,6 @@
 #!/bin/sh
 if [[ $EUID -ne 0 ]]; then
-	whiptail --title "Easy-DVSwitch" --msgbox "Debe ejecutar este script como usuario ROOT" 0 50
+	whiptail --title "DVSwitch & Nextion Interface" --msgbox "Debe ejecutar este script como usuario ROOT" 0 50
 	exit 0
 fi
 if systemctl status http.server-dvs.service |grep active >/dev/null 2>&1
@@ -18,7 +18,7 @@ if dpkg -l dvswitch-monit | grep "Monitor DVSwitch services"; then
 
     echo "El paquete dvswitch-monit y sus dependencias han sido eliminados."
 else
-    echo "No se encontr� dvswitch-monit instalado con la descripci�n 'Monitor DVSwitch services'."
+    echo "No se encontró dvswitch-monit instalado con la descripción 'Monitor DVSwitch services'."
 fi
 ####################################################################################
 #                                swap raspberry
@@ -189,7 +189,7 @@ fi
 #
 sed -i "s/utc_tz =  new DateTimeZone('UTC'/utc_tz =  new DateTimeZone('Africa\/Lagos'/"  /var/www/html/include/localtx.php
 sed -i "s/utc_tz =  new DateTimeZone('UTC'/utc_tz =  new DateTimeZone('Africa\/Lagos'/"  /var/www/html/include/lh.php
-sed -i "s/<br>Dashboard based on Pi-Star Dashboard, © Andy Taylor.*/<br>Dashboard based on Pi-Star Dashboard, © Andy Taylor (MW0MWZ) and adapted to DVSwitch by SP2ONG<br> <a title=\"Proyect by EA1HG © <?php \$cdate=date(\"Y\"); if (\$cdate > \"2023\") {\$cdate=\"2023-\".date(\"Y\");} echo \$cdate; ?>\" target=\"_blank\" href=https:\/\/github.com\/EA1HG\/dvs\/>Proyect: DVSwitch<\/a><\/span><\/center>/" /var/www/html/index.php
+sed -i "s/<br>Dashboard based on Pi-Star Dashboard, Â© Andy Taylor.*/<br>Dashboard based on Pi-Star Dashboard, Â© Andy Taylor (MW0MWZ) and adapted to DVSwitch by SP2ONG<br> <a title=\"Proyect by EA1HG Â© <?php \$cdate=date(\"Y\"); if (\$cdate > \"2023\") {\$cdate=\"2023-\".date(\"Y\");} echo \$cdate; ?>\" target=\"_blank\" href=https:\/\/github.com\/EA1HG\/dvs\/>Proyect: DVSwitch<\/a><\/span><\/center>/" /var/www/html/index.php
 
 #
 if [ -f "/var/www/html/index.html" ]
@@ -311,13 +311,13 @@ Timeout=180
 Duplex=0
 
 [Info]
-RXFrequency=222340000
-TXFrequency=224940000
+RXFrequency=434600000
+TXFrequency=434600000
 Power=1
 Latitude=41.7333
 Longitude=-50.3999
 Height=0
-Location=Iceberg, North Atlantic
+Location=Salamanca, Spain
 Description=MMDVM_Bridge
 URL=https://groups.io/g/DVSwitch
 
@@ -440,13 +440,13 @@ Debug=0
 Daemon=0
 
 [Info]
-RXFrequency=223500000
-TXFrequency=223500000
+RXFrequency=434600000
+TXFrequency=434600000
 Power=1
 Latitude=41.7333
 Longitude=-50.3999
 Height=0
-Location=Iceberg
+Location=Salamanca
 Description=DVSwitch
 URL=https://groups.io/g/DVSwitch
 
