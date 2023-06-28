@@ -13,10 +13,9 @@ Instalacion
 
  apt-get install curl sudo -y
 
- bash -c "$(curl -fsSL https://gitlab.com/hp3icc/Easy-DVSwitch/-/raw/main/install.sh)"
+ bash -c "$(curl -fsSL https://raw.githubusercontent.com/EA1HG/dvs/main/install.sh)"
 
-
-Source
+Fuentes
 Dvswitch oficial group : https://dvswitch.groups.io/g/main?
 Fix Reinstall by N4IRS : https://dvswitch.groups.io/g/main/topic/86568671
 Dashboard mod by DS5QDR : https://ds5qdr-dv.tistory.com/m/450
