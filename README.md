@@ -10,7 +10,7 @@ Este script aplica soluciones de Steve N4IRS para corregir el error al reinstala
 
 Dashboard
 
-Dashboard & EasyUserInterface mod por EA1HG
+Dashboard & Nextion Interface mod por EA1HG
 
 Instalacion
 
