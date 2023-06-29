@@ -1019,8 +1019,8 @@ fi
 ##########
 echo "--------------------------------------------------------------------------------"
 echo ""
-echo "DVSwitch Server installed"
+echo "DVSwitch Server & Nextion Interface instalado"
 echo ""
-echo "Type dvs to enter setup menu and finish your installation"
+echo "Para entrar en el menu escribe dvs y completa tu configuración"
 echo ""
 echo "--------------------------------------------------------------------------------"
