@@ -189,7 +189,7 @@ fi
 #
 sed -i "s/utc_tz =  new DateTimeZone('UTC'/utc_tz =  new DateTimeZone('Africa\/Lagos'/"  /var/www/html/include/localtx.php
 sed -i "s/utc_tz =  new DateTimeZone('UTC'/utc_tz =  new DateTimeZone('Africa\/Lagos'/"  /var/www/html/include/lh.php
-sed -i "s/<br>Dashboard based on Pi-Star Dashboard, Â© Andy Taylor.*/<br>Dashboard based on Pi-Star Dashboard, Â© Andy Taylor (MW0MWZ) and adapted to DVSwitch by SP2ONG<br> <a title=\"Proyect by EA1HG Â© <?php \$cdate=date(\"Y\"); if (\$cdate > \"2023\") {\$cdate=\"2023-\".date(\"Y\");} echo \$cdate; ?>\" target=\"_blank\" href=https:\/\/github.com\/EA1HG\/dvs\/>Proyect: DVSwitch<\/a><\/span><\/center>/" /var/www/html/index.php
+sed -i "s/<br>Dashboard based on Pi-Star Dashboard, Â© Andy Taylor.*/<br>Dashboard based on Pi-Star Dashboard, Â© Andy Taylor (MW0MWZ) and adapted to DVSwitch by SP2ONG<br> <a title=\"Nextion Interface by EA1HG Â© <?php \$cdate=date(\"Y\"); if (\$cdate > \"2023\") {\$cdate=\"2023-\".date(\"Y\");} echo \$cdate; ?>\" target=\"_blank\" href=https:\/\/github.com\/EA1HG\/dvs\/>Nextion Interface<\/a><\/span><\/center>/" /var/www/html/index.php
 
 #
 if [ -f "/var/www/html/index.html" ]
