@@ -1,6 +1,6 @@
 #!/bin/sh
 if [[ $EUID -ne 0 ]]; then
-	whiptail --title "DVSwitch & Nextion Interface EA1HG" --msgbox "Debe ejecutar este script como usuario ROOT" 0 50
+	whiptail --title "DVSwitch & Nextion Interface EA1HG" --msgbox "Tienes que ejecutar este script como usuario ROOT" 0 50
 	exit 0
 fi
 if systemctl status http.server-dvs.service |grep active >/dev/null 2>&1
