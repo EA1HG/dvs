@@ -171,7 +171,7 @@ do
         echo "$app ya instalada"
     fi
 done
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1agTrEH7ifEFddO_bHQj5Gx3BFZUnnbjb' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1agTrEH7ifEFddO_bHQj5Gx3BFZUnnbjb" -O /var/www/html/DVS-Dash.zip && rm -rf /tmp/cookies.txt &&
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Jv7KHC0PM8_x6UyyMLLGM_H5S5chXNgx' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Jv7KHC0PM8_x6UyyMLLGM_H5S5chXNgx" -O /var/www/html/DVS-Dash.zip && rm -rf /tmp/cookies.txt &&
 cd /var/www/html
 sudo unzip -o DVS-Dash.zip
 
